@@ -1385,6 +1385,7 @@ FAQ
   }
 
   .mobnav {
+    z-index: 10000;
     display: flex !important;
   }
   .header-3 {
@@ -1627,6 +1628,10 @@ FAQ
     font-size: 25px;
   }
 
+  .rs-big-head span {
+    font-size: 16px;
+  }
+
   .rs-desc-1,
   .rs-desc-2 {
     font-size: 14px;
@@ -1735,7 +1740,17 @@ FAQ
   }
 
   .mobnav.menu-opened {
-    height: 50%;
+    height: 60vh;
+  }
+
+  .free-area {
+    width: 28%;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .join-today {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1782,7 +1797,11 @@ FAQ
 
   .footer-action {
     padding-left: 38px;
-    padding-right: 53px;
+    padding-right: 38px;
+  }
+
+  .footer-action p {
+    font-size: 10px;
   }
 
   .footer-terms {

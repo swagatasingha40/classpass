@@ -479,7 +479,7 @@ select {
 
 .video-mask {
   width: fit-content;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 16px 16px 0px 0px;
   overflow: hidden;
   height: 150px;
   position: relative;
@@ -489,7 +489,7 @@ select {
 
 .video-mask video {
   width: 18vw;
-  max-width: 356px;
+  max-width: 310px;
 }
 
 .image-grid-section {

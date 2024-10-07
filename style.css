@@ -289,7 +289,7 @@ select {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 99999;
 }
 
 .nav-menu-items {
@@ -490,6 +490,7 @@ select {
 .video-mask video {
   width: 18vw;
   max-width: 310px;
+  pointer-events: none;
 }
 
 .image-grid-section {
@@ -1298,6 +1299,10 @@ FAQ
   padding-bottom: 10px;
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
+
 @media screen and (min-width: 1921px) {
   .box-color-purple,
   .box-color-purple-4,
@@ -1365,6 +1370,12 @@ FAQ
   }
 }
 
+@media only screen and (max-width: 1700px) {
+  .video-mask {
+    top: 3.5rem;
+  }
+}
+
 @media (max-height: 800px) {
   .mobnav .menu {
     margin-top: 45% !important;
@@ -1411,6 +1422,7 @@ FAQ
 
   .mobnav.menu-opened {
     height: 60%;
+    z-index: 9999;
   }
 
   .vector1,

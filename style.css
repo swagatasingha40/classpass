@@ -1870,4 +1870,8 @@ video::-webkit-media-controls {
     margin-bottom: 46px;
     content: url("./assets/Star\ -\ Divider_media.svg");
   }
+
+  .footer-link {
+    font-size: 9px;
+  }
 }

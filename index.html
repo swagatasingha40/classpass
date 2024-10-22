@@ -140,6 +140,40 @@
             </div>
             <img class="starDivider" src="./assets/StarDivider.svg" alt="" />
         </div>
+        <div class="features-section">
+            <div class="video-para1" data-aos="fade-right">
+                <div class="para1">
+                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
+                    <p class="tag-line">User Friendly</p>
+                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
+                        columns and cleaning data, even
+                        across languages.</p>
+                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                </div>
+                <img src="./assets/uf.svg" class="video1" alt="" />
+            </div>
+            <div class="video-para2" data-aos="fade-right">
+                <img src="./assets/pf.svg" class="video1" alt="" />
+                <div class="para1">
+                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
+                    <p class="tag-line">Powerful Features</p>
+                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
+                        columns and cleaning data, even across languages.</p>
+                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                </div>
+            </div>
+            <div class="video-para1" data-aos="fade-right">
+                <div class="para1">
+                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
+                    <p class="tag-line">AI Engine</p>
+                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
+                        columns and cleaning data, even across languages.</p>
+                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                </div>
+                <img src="./assets/ai_e.svg" class="video1" alt="" />
+            </div>
+            <img class="starDivider" src="./assets/StarDivider.svg" alt="" />
+        </div>
         <div class="question-section" data-aos="fade-up">
             <p class="small-head">How It Works</p>
             <p class="mid-head">From Question to Solution</p>
@@ -239,40 +273,6 @@
                 </div>
             </div>
         </div>
-        <div class="features-section">
-            <div class="video-para1" data-aos="fade-right">
-                <div class="para1">
-                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
-                    <p class="tag-line">User Friendly</p>
-                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
-                        columns and cleaning data, even
-                        across languages.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
-                </div>
-                <img src="./assets/video1.png" class="video1" alt="" />
-            </div>
-            <div class="video-para2" data-aos="fade-right">
-                <img src="./assets/video1.png" class="video1" alt="" />
-                <div class="para1">
-                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
-                    <p class="tag-line">Powerful Features</p>
-                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
-                        columns and cleaning data, even across languages.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
-                </div>
-            </div>
-            <div class="video-para1" data-aos="fade-right">
-                <div class="para1">
-                    <img src="./assets/featureIcon.svg" class="feature-icon" alt="" />
-                    <p class="tag-line">AI Engine</p>
-                    <p class="description-feature">Powered by AI, classpass provides deep semantic support for going
-                        columns and cleaning data, even across languages.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
-                </div>
-                <img src="./assets/video1.png" class="video1" alt="" />
-            </div>
-            <img class="starDivider" src="./assets/StarDivider.svg" alt="" />
-        </div>
         <div class="unmatched-section" data-aos="fade-up">
             <p class="small-head">Our Value</p>
             <p class="mid-head">An Unmatched Solution</p>
@@ -348,26 +348,26 @@
                         <span>excellence</span>.
                     </p>
                     <p class="rs-desc-1">If you’ve ever struggled to keep up with schoolwork, felt overwhelmed by
-                        assignments, or wished for a
-                        higher GPA, you’re
-                        not alone. Thousands of students have faced the same challenges.
+                        assignments,
+                        or wished for a higher GPA, you’re not alone. Thousands of students have faced the same
+                        challenges.
                     </p>
                     <p class="rs-desc-2">Classpass transforms these struggles into success. Check out our impressive
                         results.</p>
                 </div>
                 <div class="numbers">
                     <div class="number-para">
-                        <p class="np-1">5 Million+</p>
+                        <p class="np-1" data-target="5000000">0</p>
                         <p class="np-2">Questions Answered</p>
                         <p class="np-3">On average, 1,000 questions are asked daily.</p>
                     </div>
                     <div class="number-para">
-                        <p class="np-1">15,000+</p>
+                        <p class="np-1" data-target="15000">0</p>
                         <p class="np-2">Active Users</p>
                         <p class="np-3">On average, 1,000 questions are asked daily.</p>
                     </div>
                     <div class="number-para">
-                        <p class="np-1">94%</p>
+                        <p class="np-1" data-target="94">0</p>
                         <p class="np-2">Increase in GPAs</p>
                         <p class="np-3">Increase in GPAs</p>
                     </div>
@@ -899,5 +899,42 @@
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./mobnav.js"></script>
+<script>
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function animateCountUp(element, target, duration) {
+        let start = 0;
+        const step = Math.ceil(target / (duration / 1000 * 60));
+
+        function updateCount() {
+            start += step;
+            if (start > target) start = target;
+            element.textContent = start.toLocaleString();
+            if (start < target) {
+                requestAnimationFrame(updateCount);
+            }
+        }
+
+        updateCount();
+    }
+
+    document.addEventListener('scroll', function () {
+        const numberElements = document.querySelectorAll('.np-1');
+        numberElements.forEach(function (element) {
+            const target = parseInt(element.getAttribute('data-target'), 10);
+            if (isInViewport(element) && element.textContent === "0") {
+                animateCountUp(element, target, 2000);
+            }
+        });
+    });
+</script>
 
 </html>

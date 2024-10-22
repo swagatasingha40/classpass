@@ -838,6 +838,7 @@ select {
   margin: auto;
   text-align: center;
   margin-bottom: 184px;
+  margin-top: 100px;
 }
 
 .us-container {
@@ -994,7 +995,7 @@ select {
 .price-box-1,
 .price-box-2,
 .price-box-3 {
-  background-image: url("./assets/PriceBox1.png");
+  background-image: url("./assets/PriceBox1.svg");
   background-size: auto;
   background-color: #141323;
   max-width: 421px;
@@ -1005,11 +1006,11 @@ select {
 }
 
 .price-box-2 {
-  background-image: url("./assets/PriceBox2.png");
+  background-image: url("./assets/PriceBox2.svg");
 }
 
 .price-box-3 {
-  background-image: url("./assets/PriceBox3.png");
+  background-image: url("./assets/PriceBox3.svg");
 }
 
 .pb-title {

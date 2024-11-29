@@ -1004,12 +1004,28 @@ select {
 .price-box-3 {
   background-image: url("./assets/PriceBox1.svg");
   background-size: auto;
+  background-repeat: no-repeat;
   background-color: #141323;
-  max-width: 421px;
-  width: 21.927vw;
+  max-width: 420px;
+  width: 23.927vw;
   padding: 26px 32px;
   text-align: start;
   border-radius: 10px;
+  border: solid 1px #252443;
+}
+
+.price-box-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pb-highlight {
+  background-color: linear-gradient(to right, transparent, #4c4b5b);
+  padding: 4px 21px;
+  border: solid 2px #5e5d6f;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 16px;
 }
 
 .price-box-2 {
@@ -1053,6 +1069,13 @@ select {
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  border: solid 1px #4c4b5b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pb-try:hover {
+  background-color: #353356;
 }
 
 .pb-try-1 {
@@ -1065,6 +1088,12 @@ select {
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pb-try-1:hover {
+  background-color: #93a8fa;
 }
 
 .pb-line {
@@ -1077,10 +1106,16 @@ select {
   color: #76718d;
 }
 
-.hr-line {
+.hr-line-1 {
   width: 100px;
   background: linear-gradient(to right, #141228, #76718d);
-  height: 2px;
+  height: 3px;
+}
+
+.hr-line-2 {
+  width: 100px;
+  background: linear-gradient(to right, #76718d, #141228);
+  height: 3px;
 }
 
 .include {
@@ -1100,6 +1135,16 @@ select {
 
 .feature-wrap-false img {
   margin-right: 22px;
+}
+
+.feature-wrap p {
+  font-size: 16px;
+}
+
+.price-box-p {
+  margin-top: 5px;
+  color: #76718d;
+  font-size: 15px;
 }
 
 /* pricing section end */

@@ -589,6 +589,12 @@ select {
   left: 4vw;
 }
 
+.box-color-purple-4,
+.box-color-purple-5,
+.box-color-purple-6 {
+  width: 25vw;
+}
+
 .box-color-white-4 {
   top: 23.5vw;
   left: 2vw;
@@ -798,6 +804,16 @@ select {
 .video1 {
   width: 29.792vw;
   max-width: 572px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.video1 video {
+  width: 29.792vw;
+  max-width: 572px;
+  border-radius: 8px;
+  pointer-events: none;
 }
 
 .para1 {
@@ -1926,6 +1942,17 @@ video::-webkit-media-controls {
 
   .footer-link {
     font-size: 9px;
+  }
+
+  .video1 {
+    width: 80vw;
+    max-width: 80vw;
+    height: fit-content;
+  }
+
+  .video1 video {
+    width: 80vw;
+    max-width: 80vw;
   }
 }
 

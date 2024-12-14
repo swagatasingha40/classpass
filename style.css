@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0b0717;
   font-family: "Inter", sans-serif;
@@ -585,6 +589,12 @@ select {
   left: 4vw;
 }
 
+.box-color-purple-4,
+.box-color-purple-5,
+.box-color-purple-6 {
+  width: 25vw;
+}
+
 .box-color-white-4 {
   top: 23.5vw;
   left: 2vw;
@@ -779,6 +789,7 @@ select {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 94.38px;
+  scroll-margin-top: 100px;
 }
 
 .video-para1,
@@ -793,6 +804,16 @@ select {
 .video1 {
   width: 29.792vw;
   max-width: 572px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.video1 video {
+  width: 29.792vw;
+  max-width: 572px;
+  border-radius: 8px;
+  pointer-events: none;
 }
 
 .para1 {
@@ -839,6 +860,7 @@ select {
   text-align: center;
   margin-bottom: 184px;
   margin-top: 100px;
+  scroll-margin-top: 200px;
 }
 
 .us-container {
@@ -948,7 +970,6 @@ select {
 
 .np-3 {
   color: #76718d;
-  font-weight: 500;
   font-size: 18px;
 }
 
@@ -981,6 +1002,7 @@ select {
   margin: auto;
   text-align: center;
   margin-bottom: 184px;
+  scroll-margin-top: 200px;
 }
 
 .pricing-section-mob {
@@ -989,6 +1011,7 @@ select {
 
 .price-boxes {
   display: flex;
+  justify-content: center;
   gap: 38px;
 }
 
@@ -997,12 +1020,28 @@ select {
 .price-box-3 {
   background-image: url("./assets/PriceBox1.svg");
   background-size: auto;
+  background-repeat: no-repeat;
   background-color: #141323;
-  max-width: 421px;
-  width: 21.927vw;
+  max-width: 420px;
+  width: 23.927vw;
   padding: 26px 32px;
   text-align: start;
   border-radius: 10px;
+  border: solid 1px #252443;
+}
+
+.price-box-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pb-highlight {
+  background-color: linear-gradient(to right, transparent, #4c4b5b);
+  padding: 4px 21px;
+  border: solid 2px #5e5d6f;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 16px;
 }
 
 .price-box-2 {
@@ -1046,6 +1085,13 @@ select {
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  border: solid 1px #4c4b5b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pb-try:hover {
+  background-color: #353356;
 }
 
 .pb-try-1 {
@@ -1058,6 +1104,12 @@ select {
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pb-try-1:hover {
+  background-color: #93a8fa;
 }
 
 .pb-line {
@@ -1070,10 +1122,16 @@ select {
   color: #76718d;
 }
 
-.hr-line {
+.hr-line-1 {
   width: 100px;
   background: linear-gradient(to right, #141228, #76718d);
-  height: 2px;
+  height: 3px;
+}
+
+.hr-line-2 {
+  width: 100px;
+  background: linear-gradient(to right, #76718d, #141228);
+  height: 3px;
 }
 
 .include {
@@ -1093,6 +1151,16 @@ select {
 
 .feature-wrap-false img {
   margin-right: 22px;
+}
+
+.feature-wrap p {
+  font-size: 16px;
+}
+
+.price-box-p {
+  margin-top: 5px;
+  color: #76718d;
+  font-size: 15px;
 }
 
 /* pricing section end */
@@ -1874,5 +1942,75 @@ video::-webkit-media-controls {
 
   .footer-link {
     font-size: 9px;
+  }
+
+  .video1 {
+    width: 80vw;
+    max-width: 80vw;
+    height: fit-content;
+  }
+
+  .video1 video {
+    width: 80vw;
+    max-width: 80vw;
+  }
+}
+
+/* extra pages */
+.extra_div {
+  width: 80vw;
+  max-width: 1483px;
+  margin: auto;
+}
+
+.extra_h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.extra_div {
+  margin-top: 50px;
+}
+
+.extra_h2 {
+  margin-bottom: 12px;
+}
+
+.extra_h3 {
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.extra_para {
+  color: #76718d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.extra_end {
+  margin-bottom: 100px;
+}
+
+.extra_ul {
+  list-style: none;
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.extra_li {
+  margin-top: 5px;
+  color: #76718d;
+}
+
+.extra_li_span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 450px) {
+  .extra_para {
+    color: #76718d;
+    font-size: 14px;
+    font-weight: 500;
   }
 }

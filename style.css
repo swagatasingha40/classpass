@@ -807,11 +807,13 @@ select {
   border-radius: 8px;
   overflow: hidden;
   height: fit-content;
+  background-color: #748ffd;
+  padding: 20px 20px 0px 20px;
 }
 
 .video1 video {
-  width: 29.792vw;
-  max-width: 572px;
+  width: 26.9vw;
+  max-width: 530px;
   border-radius: 8px;
   pointer-events: none;
 }
@@ -1951,8 +1953,8 @@ video::-webkit-media-controls {
   }
 
   .video1 video {
-    width: 80vw;
-    max-width: 80vw;
+    width: 70vw;
+    max-width: 70vw;
   }
 }
 

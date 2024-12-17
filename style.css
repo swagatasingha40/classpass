@@ -802,13 +802,11 @@ select {
 }
 
 .video1 {
-  width: 29.792vw;
-  max-width: 572px;
   border-radius: 8px;
   overflow: hidden;
   height: fit-content;
   background-color: #748ffd;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .video1 video {

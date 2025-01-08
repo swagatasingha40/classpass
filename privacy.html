@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>ClassPass Privacy</title>
+    <script>
+        window.lemonSqueezyAffiliateConfig = {
+            store: 'classpass',
+            trackOnLoad: false,
+            onReady: function (e) {
+                const params = new URLSearchParams(window.location.search);
+                const affiliateId = params.get('aff');
+                e.Track(affiliateId);
+            }
+        };
+    </script>
+    <script src="https://lmsqueezy.com/affiliate.js" defer></script>
+
 </head>
 
 <body>
@@ -17,11 +30,11 @@
                     <a href="#">Home</a>
                     <a href="#value">Features</a>
                     <a href="#pricing">Plans</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdqOuhdnFWCz3MxbQGtO0qyktb3C2XpcFFq2kzeeshd9UUsw/viewform"
+                    <a href="https://classpass.gitbook.io/classpass/classpass/or-affiliate-program#how-to-get-started"
                         target="_blank">Ambassadors</a>
                 </div>
                 <div class="nav-btns">
-                    <a href="https://dashboard.classpass.study/signup" class="start-button">Get Started</a>
+                    <a href="https://dashboard.classpass.study/signup?trial=true" class="start-button">Get Started</a>
                     <a href="https://dashboard.classpass.study/signin" class="dashboard-button">Dashboard</a>
                 </div>
             </div>
@@ -41,11 +54,12 @@
                 <li class="menu-item"><a href="#pricing">Plans</a></li>
                 <li class="menu-item"><a href="#faq">FAQ</a></li>
                 <li class="menu-item"><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScdqOuhdnFWCz3MxbQGtO0qyktb3C2XpcFFq2kzeeshd9UUsw/viewform"
+                        href="https://classpass.gitbook.io/classpass/classpass/or-affiliate-program#how-to-get-started"
                         target="_blank">Ambassadors</a></li>
                 <div class="nav-btns-mob">
-                    <a href="https://dashboard.classpass.study/signup" class="dashboard-button-mob">Dashboard</a>
-                    <a href="https://dashboard.classpass.study/signin" class="start-button-mob">Get Started</a>
+                    <a href="https://dashboard.classpass.study/signin" class="dashboard-button-mob">Dashboard</a>
+                    <a href="https://dashboard.classpass.study/signup?trial=true" class="start-button-mob">Get
+                        Started</a>
                 </div>
             </ul>
         </div>

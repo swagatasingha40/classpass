@@ -15,7 +15,17 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>ClassPass</title>
-    <script>window.lemonSqueezyAffiliateConfig = { store: "classpass" };</script>
+    <script>
+        window.lemonSqueezyAffiliateConfig = {
+            store: 'classpass',
+            trackOnLoad: false,
+            onReady: function (e) {
+                const params = new URLSearchParams(window.location.search);
+                const affiliateId = params.get('aff');
+                e.Track(affiliateId);
+            }
+        };
+    </script>
     <script src="https://lmsqueezy.com/affiliate.js" defer></script>
 </head>
 
@@ -28,11 +38,11 @@
                     <a href="#">Home</a>
                     <a href="#value">Features</a>
                     <a href="#pricing">Plans</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScdqOuhdnFWCz3MxbQGtO0qyktb3C2XpcFFq2kzeeshd9UUsw/viewform"
+                    <a href="https://classpass.gitbook.io/classpass/classpass/or-affiliate-program#how-to-get-started"
                         target="_blank">Ambassadors</a>
                 </div>
                 <div class="nav-btns">
-                    <a href="https://dashboard.classpass.study/signup" class="start-button">Get Started</a>
+                    <a href="https://dashboard.classpass.study/signup?trial=true" class="start-button">Get Started</a>
                     <a href="https://dashboard.classpass.study/signin" class="dashboard-button">Dashboard</a>
                 </div>
             </div>
@@ -52,11 +62,12 @@
                 <li class="menu-item"><a href="#pricing">Plans</a></li>
                 <li class="menu-item"><a href="#faq">FAQ</a></li>
                 <li class="menu-item"><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScdqOuhdnFWCz3MxbQGtO0qyktb3C2XpcFFq2kzeeshd9UUsw/viewform"
+                        href="https://classpass.gitbook.io/classpass/classpass/or-affiliate-program#how-to-get-started"
                         target="_blank">Ambassadors</a></li>
                 <div class="nav-btns-mob">
-                    <a href="https://dashboard.classpass.study/signup" class="dashboard-button-mob">Dashboard</a>
-                    <a href="https://dashboard.classpass.study/signin" class="start-button-mob">Get Started</a>
+                    <a href="https://dashboard.classpass.study/signin" class="dashboard-button-mob">Dashboard</a>
+                    <a href="https://dashboard.classpass.study/signup?trial=true" class="start-button-mob">Get
+                        Started</a>
                 </div>
             </ul>
         </div>
@@ -65,11 +76,11 @@
                 data-aos-duration="3000" />
             <img src="./assets/vector2.svg" alt="social" class="vector2" data-aos="fade-right" />
             <div class="promotion-wrapper">
-                <div class="promotion">
-                    <a href="#" class="free-area">Try for free!</a>
-                    <a href="#" class="join-today">Join today for one week of free access</a>
+                <a href="https://dashboard.classpass.study/signup?trial=true" class="promotion">
+                    <div href="#" class="free-area">Try for free!</div>
+                    <div href="#" class="join-today">Join today for one week of free access</div>
                     <img src="./assets/BlueRightArrow.svg" class="" alt="logo" />
-                </div>
+                </a>
             </div>
             <div class="header">
                 <p class="header-1">School Made Easy</p>
@@ -80,7 +91,7 @@
                 </p>
                 <div class="nav-btns hero-btns">
                     <a href="#features" class="dashboard-button">Learn More</a>
-                    <a href="https://dashboard.classpass.study/signup " class="start-button">Get Started</a>
+                    <a href="https://dashboard.classpass.study/signup?trial=true" class="start-button">Get Started</a>
                 </div>
             </div>
         </div>
@@ -97,7 +108,7 @@
                         and details to deliver the most accurate answers.</p>
                 </div>
                 <div class="box-3">
-                    <p class="box-color-white">Enhanced AI Analyzes Query</p>
+                    <p class="box-color-white">Expert Answer Unlocked</p>
                     <p class="box-color-purple">Just like that, your expert answer is ready. Get a step-by-step
                         explanation or move on to your next question—it's that
                         simple.</p>
@@ -156,7 +167,8 @@
                     <p class="description-feature">Our integrated button works seamlessly across all supported
                         platforms. With one click, instantly get the answer to your
                         question.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                    <a class="started-button" href="https://dashboard.classpass.study/signup?trial=true">Get Started
+                        <img src="./assets/whiteRightArrow.svg" alt="" /></a>
                 </div>
                 <!-- <img src="./assets/uf.svg" class="video1" alt="" /> -->
                 <div class="video1">
@@ -178,7 +190,8 @@
                     <p class="tag-line">Screenshot Any Question</p>
                     <p class="description-feature">Need answers, even for visual or image-based questions? Just snap a
                         screenshot, and you’ll have the solution instantly.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                    <a class="started-button" href="https://dashboard.classpass.study/signup?trial=true">Get Started
+                        <img src="./assets/whiteRightArrow.svg" alt="" /></a>
                 </div>
             </div>
             <div class="video-para1" data-aos="fade-right">
@@ -188,7 +201,8 @@
                     <p class="description-feature">Our extension is completely undetectable. With Incognito mode, it
                         integrates into any platform, ensuring your activity
                         remains private and secure.</p>
-                    <a class="started-button">Get Started <img src="./assets/whiteRightArrow.svg" alt="" /></a>
+                    <a class="started-button" href="https://dashboard.classpass.study/signup?trial=true">Get Started
+                        <img src="./assets/whiteRightArrow.svg" alt="" /></a>
                 </div>
                 <!-- <img src="./assets/ai_e.svg"  alt="" /> -->
                 <div class="video1">
@@ -423,7 +437,10 @@
                         <p class="pb-title">Monthly</p>
                         <p class="pb-price">$9.99<span>/month</span></p>
                         <p class="pb-tag">Perfect for consistent support throughout your semester.</p>
-                        <p class="pb-try">Get 7 days Free</p>
+                        <a href="https://dashboard.classpass.study/signup?trial=true"
+                            style="text-decoration: unset;color: unset;">
+                            <p class="pb-try">Get 7 days Free</p>
+                        </a>
                         <div class="pb-line">
                             <div>
                                 <hr class="hr-line-1" />
@@ -460,7 +477,10 @@
                         </div>
                         <p class="pb-price">$4.99<span>/month</span></p>
                         <p class="pb-tag">Provides expert answers for all your academic needs year-round.</p>
-                        <p class="pb-try-1">Get 7 days Free</p>
+                        <a href="https://dashboard.classpass.study/signup?trial=true&type=yearly"
+                            style="text-decoration: unset;color: unset;">
+                            <p class="pb-try-1">Get 7 days Free</p>
+                        </a>
                         <div class="pb-line">
                             <div>
                                 <hr class="hr-line-1" />
@@ -498,7 +518,10 @@
                             <p class="pb-title">Monthly</p>
                             <p class="pb-price">$9.99<span>/month</span></p>
                             <p class="pb-tag">Perfect for consistent support throughout your semester.</p>
-                            <p class="pb-try">Get 7 days Free</p>
+                            <a href="https://dashboard.classpass.study/signup?trial=true"
+                                style="text-decoration: unset;color: unset;">
+                                <p class="pb-try">Get 7 days Free</p>
+                            </a>
                             <div class="pb-line">
                                 <div>
                                     <hr class="hr-line-1" />
@@ -535,7 +558,10 @@
                             </div>
                             <p class="pb-price">$4.99<span>/month</span></p>
                             <p class="pb-tag">Provides expert answers for all your academic needs year-round.</p>
-                            <p class="pb-try-1">Get 7 days Free</p>
+                            <a href="https://dashboard.classpass.study/signup?trial=true&type=yearly"
+                                style="text-decoration: unset;color: unset;">
+                                <p class="pb-try-1">Get 7 days Free</p>
+                            </a>
                             <div class="pb-line">
                                 <div>
                                     <hr class="hr-line-1" />
@@ -623,7 +649,7 @@
                             <a href="#">Home</a>
                             <a href="#value">Features</a>
                             <a href="#pricing">Pricing</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdqOuhdnFWCz3MxbQGtO0qyktb3C2XpcFFq2kzeeshd9UUsw/viewform"
+                            <a href="https://classpass.gitbook.io/classpass/classpass/or-affiliate-program#how-to-get-started"
                                 target="_blank">Ambassadors</a>
                         </div>
 
@@ -637,8 +663,8 @@
                     <div class="footer-nav-last">
                         <div class="nav-holder">
                             <span>Resources</span>
-                            <a href="#">Documentation</a>
-                            <a href="#">Academic Honesty</a>
+                            <a href="https://classpass.gitbook.io/classpass">Documentation</a>
+                            <a href="/academic-honesty">Academic Honesty</a>
                             <a href="#">Help Center</a>
                             <a href="#">Contact Us</a>
                         </div>
@@ -670,15 +696,15 @@
                         <img src="./assets/classpasswhitelogo.svg" alt="" />
                     </div>
                     <div class="footer-terms">
-                        <a class="footer-link" href="">Terms & Conditions</a>
+                        <a class="footer-link" href="/terms">Terms & Conditions</a>
                         <div>
                             <img src="./assets/Star - Center.svg" alt="" />
                         </div>
-                        <a class="footer-link" href="">Privacy Policy</a>
+                        <a class="footer-link" href="/privacy-policy">Privacy Policy</a>
                         <div>
                             <img src="./assets/Star - Center.svg" alt="" />
                         </div>
-                        <a class="footer-link" href="">Acceptable Use</a>
+                        <a class="footer-link" href="/acceptable-use">Acceptable Use</a>
                     </div>
                     <p>© 2024 - ClassPass Technologies LLC. All Rights Reserved.</p>
                 </div>

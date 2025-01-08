@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>ClassPass Acceptable Use</title>
+    <script>
+        window.lemonSqueezyAffiliateConfig = {
+            store: 'classpass',
+            trackOnLoad: false,
+            onReady: function (e) {
+                const params = new URLSearchParams(window.location.search);
+                const affiliateId = params.get('aff');
+                e.Track(affiliateId);
+            }
+        };
+    </script>
+    <script src="https://lmsqueezy.com/affiliate.js" defer></script>
+
 </head>
 
 <body>
